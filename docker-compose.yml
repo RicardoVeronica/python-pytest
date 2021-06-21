@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  web:
+    build: .
+    container_name: my_python
+    command: python app.py
+    volumes:
+      - .:/code
